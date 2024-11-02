@@ -44,3 +44,23 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+# JSON-Schema-Based Random Data Generator
+
+## Overview
+
+This project is a React.js and TypeScript-based application that generates random data objects according to a given JSON Schema. The implementation strictly adheres to constraints specified in the schema, such as data types, minimum/maximum values, required properties, and more. The application also includes comprehensive unit tests using Jest to validate the functionality.
+
+## Features
+
+- **Primitive Types Support**: Generates values for `integer`, `number`, `string`, and `boolean` data types.
+- **Array Handling**: Generates arrays with constraints like `minItems`, `maxItems`, and `uniqueItems`.
+- **Object Generation**: Recursively generates objects, respecting `required` fields and nested constraints.
+- **Enum Support**: Generates values from a predefined list if the `enum` property is present.
+- **Edge Case Handling**: Properly handles edge cases such as empty arrays, boundary numeric values, and optional properties.
+
+## Technologies Used
+
+- **React.js** for building the user interface.
+- **TypeScript** for type safety and enhanced developer experience.
+- **Jest** for unit testing and test coverage.
